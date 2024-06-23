@@ -4,7 +4,7 @@ This project is a frontend layout for a music streaming service, styled primaril
 
 ## Table of Contents
 
-- [Demo](#demo)
+- [Video Link](#Video-link)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
@@ -14,9 +14,9 @@ This project is a frontend layout for a music streaming service, styled primaril
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
-## Demo
+## Video Link
 
-![Demo Image](https://example.com/path-to-your-image.png)
+You can see the project [video](https://drive.google.com/file/d/11FMRr5oDSXobXbTM1UrfBrSHeKztvR5z/view?usp=sharing).
 
 
 
