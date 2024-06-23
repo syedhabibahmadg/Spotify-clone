@@ -16,7 +16,7 @@ This project is a frontend layout for a music streaming service, styled primaril
 
 ## Demo
 
-![Demo Image](link-to-demo-image.png)
+![Demo Image](https://drive.google.com/file/d/1cBbuJV-191BOc5Lny4StqYyVnb0_yRYO/view?usp=sharing)
 
 You can view a live demo of the project [here](http://example.com).
 
