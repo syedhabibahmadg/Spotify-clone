@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="https://open.spotify.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <svg data-encore-id="icon" fill="white" width="20" height="20.48" role="img" aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 bneLcE home-active-icon QbaKKdcHNA2x3_YJvpYu" viewBox="0 0 24 24">
+                        <path
+                            d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z">
+                        </path>
+                    </svg>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <svg data-encore-id="icon" fill="white" width="24" role="img" aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 bneLcE search-icon QbaKKdcHNA2x3_YJvpYu" viewBox="0 0 24 24">
+                        <path
+                            d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                        </path>
+                    </svg>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <svg data-encore-id="icon" fill="white" width="20" role="img" aria-hidden="true"
+                            viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                            <path
+                                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                            </path>
+                        </svg>
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" fill="white"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">
+                            Create your first playlist
+                        </p>
+                        <p class="box-p2">
+                            It's easy, we'll help you
+                        </p>
+                        <button class="badge">
+                            Create playlist
+                        </button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">
+                            Let's find some podcasts to follow
+                        </p>
+                        <p class="box-p2">
+                            We'll keep you updated on new episodes
+                        </p>
+                        <button class="badge">
+                            Browse podcasts
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <button class="stick-nav-button">
+                        <svg data-encore-id="icon" role="img" fill="#716d6d" aria-hidden="true"
+                            class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                            <path
+                                d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                            </path>
+                        </svg>
+                    </button>
+                    <h2 class="greeting">
+                        Good Evening
+                    </h2>
+                    <button class="stick-nav-button hide">
+                        <svg data-encore-id="icon" fill="#716d6d" role="img" aria-hidden="true"
+                            class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                            <path
+                                d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-items hide">Explore Premium</button>
+                    <button class="badge nav-items black-stick-button hide"
+                        style="display: flex; justify-content: center; align-items: center; background-color: black;color: white;">
+                        <svg data-encore-id="icon" style="margin-right: 10px;" role="img" width="15" height="15"
+                            aria-hidden="true" fill="white" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z">
+                            </path>
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z">
+                            </path>
+                        </svg>Intall App</button>
+                    <div class="nav-bell-icon nav-items">
+                        <svg data-encore-id="icon" role="img" fill="white" width="16" height="14" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <span class="name nav-items">
+                        M
+                    </span>
+
+                </div>
+            </div>
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">ANIMAL</p>
+                        <p class="card-info">Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <h2>Popular Albums</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e023c5d63cc9c4a2964befb7731" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Open Letter</p>
+                        <p class="card-info">Talha Anjum</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Still Rollin</p>
+                        <p class="card-info">Shubh</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">HIT ME HARD AND SOFT</p>
+                        <p class="card-info">Billie Eilish</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0200c7fb9784fa0cbc02f567a6" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Maybe,It's Love</p>
+                        <p class="card-info">Hassan Raheem</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">ANIMAL</p>
+                        <p class="card-info">Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <h2>Popular radio</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/5HcunTidTUrOaf8V0iJcvl/en-GB"
+                            alt="" srcset="" class="card-image">
+                        <p class="card-title">Nusrat Fetah Ali..</p>
+                        <p class="card-info">with Abida Parveen, Atta Ullah Khan...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                            alt="" srcset="" class="card-image">
+                        <p class="card-title">Arjit Singh Radio</p>
+                        <p class="card-info">with Neha Kakkar, Pritam, KK and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/6DARBhWbfcS9E4yJzcliqQ/en-GB"
+                            alt="" srcset="" class="card-image">
+                        <p class="card-title">Karan Aujla Radio</p>
+                        <p class="card-info">With Karan Aujla, Prem Dhillon</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/69xcFpmqTOmFNOL08Bxyci/en-GB"
+                            alt="" srcset="" class="card-image">
+                        <p class="card-title">Talha Anjum Radio</p>
+                        <p class="card-info">With Talhah Yunus, Umair, Young Stunners and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/5r3wPya2PpeTTsXsGhQU8O/en-GB"
+                            alt="" srcset="" class="card-image">
+                        <p class="card-title">Shubh Radio</p>
+                        <p class="card-info">With AP Dhillon, Gurinder Gill, Ikky and more</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <h2>Meditate yourself to sleep</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002cd17d41419faa97069e06c16" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Sleep</p>
+                        <p class="card-info">with Abida Parveen, Atta Ullah Khan...</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f000000021178668a0433d73e34bb4af5" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Deep Sleep</p>
+                        <p class="card-info">with Neha Kakkar, Pritam, KK and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002d6e987f5eac610420e385ead" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Karan Aujla Radio</p>
+                        <p class="card-info">With Karan Aujla, Prem Dhillon</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f000000028499dc973b8acdb6e6c6ff9d" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Talha Anjum Radio</p>
+                        <p class="card-info">With Talhah Yunus, Umair, Young Stunners and more</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002325a73f69fa4fef821080f25" alt="" srcset=""
+                            class="card-image">
+                        <p class="card-title">Shubh Radio</p>
+                        <p class="card-info">With AP Dhillon, Gurinder Gill, Ikky and more</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="company">
+                    <span class="bar">Company</span>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">For the Record</a>
+                </div>
+                <div class="communites">
+                    <span class="bar">Communites</span>
+                    <a href="#">For Artists</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Investor</a>
+                    <a href="#">Vendors</a>
+                </div>
+                <div class="userful-links">
+                    <span class="bar">Useful links</span>
+                    <a href="#">Support</a>
+                    <a href="#">Free Mobile App</a>
+                </div>
+                <div class="spotify-plan">
+                    <span class="bar">Spotify Plans</span>
+                    <a href="#">Premium Individual</a>
+                    <a href="#">Premium Duo</a>
+                    <a href="#">Premium Family</a>
+                    <a href="#">Premium Student</a>
+                    <a href="#">Spotify Free</a>
+                </div>
+                <div class="footer-icons">
+                    <div class="nav-bell-icon nav-items footer-icons-image">
+                        <svg data-encore-id="icon" role="img" fill="white" width="16" height="14" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dCAvla">
+                            <path
+                                d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 0 1-.921-.599 2.477 2.477 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 0 0-.923-1.418A3.928 3.928 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z">
+                            </path>
+                            <path
+                                d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335zm4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="nav-bell-icon nav-items footer-icons-image">
+                        <svg data-encore-id="icon" role="img" fill="white" width="16" height="14" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dCAvla">
+                            <path
+                                d="M13.54 3.889a2.968 2.968 0 0 0 1.333-1.683 5.937 5.937 0 0 1-1.929.738 2.992 2.992 0 0 0-.996-.706 2.98 2.98 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.929 2.929 0 0 0-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 0 1-3.484-.932A8.536 8.536 0 0 1 1.532 2.54a2.993 2.993 0 0 0-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 0 1-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.937 2.937 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.945 2.945 0 0 0 1.77.603 5.944 5.944 0 0 1-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 0 0 5.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 0 0 1.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 0 0 .738-1.988 8.417 8.417 0 0 0 .246-2.429 6.177 6.177 0 0 0 1.508-1.563c-.56.249-1.14.407-1.738.476z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="nav-bell-icon nav-items footer-icons-image">
+                        <svg data-encore-id="icon" role="img" fill="white" width="16" height="14" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M16 8a8 8 0 1 0-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0 0 16 8z">
+                            </path>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                <div class="line"></div>
+            </div>
+
+            <div class="footer-links">
+                <div class="links">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety & Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <div class="copy-right-footer">
+                    <span>&copy; 2024 Spotify AB</span>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://i.scdn.co/image/ab67616d000048515f3ede47954a93aa03efe5f9" alt="album image"
+                        srcset="">
+                </div>
+                <div class="album-link">
+                    <div class="album-heading">
+                        <a href="#">Arjan Vailly</a>
+                    </div>
+                    <div class="album-info">
+                        <a href="#">Manan Bhardwaj ,</a><a href="#">Bhupinder Babbal</a>
+                    </div>
+                </div>
+                <div class="album-icon">
+                    <svg data-encore-id="icon" fill="white" width="20px" height="20px" role="img" aria-hidden="true"
+                        viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z">
+                        </path>
+                        <path
+                            d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="mobilecontrols">
+                <span>
+                    <svg viewBox="0 0 32 32" style="margin-right: 10px;" fill="white" width="18px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: white;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g data-name="Layer 54" id="Layer_54">
+                            <path class="cls-1"
+                                d="M16,28.72a3,3,0,0,1-2.13-.88L3.57,17.54a8.72,8.72,0,0,1-2.52-6.25,8.06,8.06,0,0,1,8.14-8A8.06,8.06,0,0,1,15,5.68l1,1,.82-.82h0a8.39,8.39,0,0,1,11-.89,8.25,8.25,0,0,1,.81,12.36L18.13,27.84A3,3,0,0,1,16,28.72ZM9.15,5.28A6.12,6.12,0,0,0,4.89,7a6,6,0,0,0-1.84,4.33A6.72,6.72,0,0,0,5,16.13l10.3,10.3a1,1,0,0,0,1.42,0L27.23,15.91A6.25,6.25,0,0,0,29,11.11a6.18,6.18,0,0,0-2.43-4.55,6.37,6.37,0,0,0-8.37.71L16.71,8.8a1,1,0,0,1-1.42,0l-1.7-1.7a6.28,6.28,0,0,0-4.4-1.82Z" />
+                        </g>
+                    </svg>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white"
+                        width="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                        viewBox="0 0 512 512" xml:space="preserve">
+                        <path
+                            d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z" />
+                    </svg>
+                </span>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <button class="control-icons">
+                        <svg data-encore-id="icon" fill="white" width="14px" role="img" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z">
+                            </path>
+                            <path
+                                d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="control-icons">
+                        <svg data-encore-id="icon" fill="white" width="14px" role="img" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="control-icons play">
+                        <svg data-encore-id="icon" fill="black" width="18px" height="18px" role="img" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="control-icons">
+                        <svg data-encore-id="icon" fill="white" width="14px" role="img" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="control-icons">
+                        <svg data-encore-id="icon" fill="white" width="14px" role="img" aria-hidden="true"
+                            viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="playback">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="100" value="40" step="5" class="progress-bar" />
+                    <span class="total-time">03:10</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="img" aria-hidden="true"
+                        viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path d="M11.196 8 6 5v6l5.196-3z"></path>
+                        <path
+                            d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z">
+                        </path>
+                    </svg>
+                </button>
+
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="img" aria-hidden="true"
+                        viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path
+                            d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="img" aria-hidden="true"
+                        viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path
+                            d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="presentation" aria-hidden="true"
+                        class="Svg-sc-ytk21e-0 dYnaPI" viewBox="0 0 16 16">
+                        <path
+                            d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25h-6.5zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5H1.75zM4 15H2v-1.5h2V15z">
+                        </path>
+                        <path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                    </svg>
+                </button>
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="presentation" aria-label="Volume high"
+                        aria-hidden="true" id="volume-icon" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 kcUFwU">
+                        <path
+                            d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.642 3.642 0 0 1-1.33-4.967 3.639 3.639 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.139 2.139 0 0 0 0 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88z">
+                        </path>
+                        <path d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127v1.55z"></path>
+                    </svg>
+                </button>
+                <span><input type="range" min="0" max="100" value="40" step="5" class="progress-bar" style="width: 20%; margin: 0;
+    padding: 1px 0px;" /></span>
+
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="img" aria-hidden="true"
+                        viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path
+                            d="M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16V2.45z">
+                        </path>
+                        <path
+                            d="M15.25 9.007a.75.75 0 0 1 .75.75v4.493a.75.75 0 0 1-.75.75H9.325a.75.75 0 0 1-.75-.75V9.757a.75.75 0 0 1 .75-.75h5.925z">
+                        </path>
+                    </svg>
+                </button>
+
+                <button class="control-icons">
+                    <svg data-encore-id="icon" fill="white" width="18px" role="img" aria-hidden="true"
+                        viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path
+                            d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+        <div class="bottomnav">
+            <div class="bottom-nav-icons">
+                <span class="buttom-nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="style-bottom-icon" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256">
+                    <path
+                            d="M224,120v96a8,8,0,0,1-8,8H160a8,8,0,0,1-8-8V164a4,4,0,0,0-4-4H108a4,4,0,0,0-4,4v52a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a16,16,0,0,1,4.69-11.31l80-80a16,16,0,0,1,22.62,0l80,80A16,16,0,0,1,224,120Z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="bottom-nav-about">
+                    <a href="#" style="font-size: 11px;
+                    font-weight: 900;">Home</a>
+                </span>
+            </div>
+            <div class="bottom-nav-icons">
+                <span class="buttom-nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="style-bottom-icon" width="24" height="24" fill="#d1d1d1" viewBox="0 0 256 256"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"></path></svg>                     </span>
+                    <span class="bottom-nav-about">
+                    <a href="#" style="font-size: 11px;
+    font-weight: 900;">Search</a>
+                </span>
+            </div>
+            <div class="bottom-nav-icons">
+                <span class="buttom-nav-icon">
+                    <svg data-encore-id="icon" class="style-bottom-icon" fill="#d1d1d1" width="24"  height="24"role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                        <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="bottom-nav-about">
+                    <a href="#" style="font-size: 11px;
+    font-weight: 900;">Library</a>
+                </span>
+            </div>
+            <div class="bottom-nav-icons">
+                <span class="buttom-nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="style-bottom-icon" width="24" height="24" fill="#d1d1d1" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm66.59-84.36a12,12,0,0,1-16.24,4.93,106.7,106.7,0,0,0-100.7,0A11.83,11.83,0,0,1,72,134a12,12,0,0,1-5.66-22.58,130.61,130.61,0,0,1,123.3,0A12,12,0,0,1,194.59,127.64Zm-16,36a12,12,0,0,1-16.23,5,73,73,0,0,0-68.72,0,12,12,0,0,1-11.28-21.18,97,97,0,0,1,91.28,0A12,12,0,0,1,178.59,163.64Z"></path></svg>
+                </span>
+                <span class="bottom-nav-about">
+                    <a href="#" style="font-size: 11px;
+    font-weight: 900;">Get App</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
